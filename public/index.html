@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>TpNode06</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:2em;
+      
+    }
+    
+    nav{
+      background-color: #E1FFD8;
+      color: white;
+      padding: 15px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .contenedor{
+      margin-left: 10px;
+      margin-right: 100px;
+
+          }
+    
+    .abajo{
+      margin-left: 10px;
+    }
+
+    button{
+      background-color: #262626; 
+      color: #E1FFD8;
+    }
+    a{
+      color: black;
+    }
+
+    
+  
+   
+   
+    
+     footer {
+      background-color: #262626;
+      color: white;
+      padding: 15px;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">TpNode06</a>
+    
+  </nav>
+
+  <div class="contenedor">
+  <p> Debes implementar un formulario HTML que permita jugar al juego de Piedra, Papel,
+    Tijera contra la computadora.<br>
+    La computadora deberá calcular cuál de las tres opciones quiere. Esto lo debe hacer de
+    manera aleatoria.<br><br>
+    Pista: La generación aleatoria de la opción del ordenador se puede realizar generando un
+    número aleatorio, por ejemplo del 0 al 2. Si es 0 será Piedra, si es 1 será Papel y si es 2
+    será Tijera.<br><br>
+    El programa le debe preguntar al usuario cuál es su opción (¡sin mostrar la suya!). Esto
+    puede hacerse indicándole al usuario que introduzca un único carácter<br><br>
+    A continuación comprobará quién de los dos ha ganado y lo mostrará.</p>
+<br>
+
+  </div>
+  <div class="abajo">
+
+    <form action="recuperardatos" method="post">
+      
+
+      ¿Piedra, Papel o tijera? (p/a/t):
+  
+      <input type="text" name="nombre" size="30"><br>
+  
+      
+      <button class="btn btn-dark" type="submit" value="Enviar">Enviar</button>
+  
+    </form>
+<br>
+<br>
+<br>
+</div>
+<footer class="container-fluid text-center">
+  <p>Copyright © 2020-2021  Hecho por Axel.</p>
+</footer>
+</body>
+
+</html>
+
+  
